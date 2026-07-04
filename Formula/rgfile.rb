@@ -1,30 +1,30 @@
 class Rgfile < Formula
   desc "Fast, robust command-line client for GigaFile.nu"
   homepage "https://github.com/Maymall/gigafile-rust-cli"
-  version "0.9.3"
-  license "GPL-3.0-only"
+  version "0.10.0"
+  license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Maymall/gigafile-rust-cli/releases/download/v0.9.3/rgfile-0.9.3-aarch64-apple-darwin.tar.gz"
-      sha256 "ff719417a0207bd7445dfe764bc595f708eebb18e4e02590a7541ef0a55a22bb"
+      url "https://github.com/Maymall/gigafile-rust-cli/releases/download/v0.10.0/rgfile-0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "096b3cb26fb3aeb7fab7000968831927570107082fc15dd1a7bc8c80fdfa9560"
     end
     on_intel do
-      url "https://github.com/Maymall/gigafile-rust-cli/releases/download/v0.9.3/rgfile-0.9.3-x86_64-apple-darwin.tar.gz"
-      sha256 "1bc18bba3e3b12fd04bcadaf905997044e47c0087be6fd9bd5b42a282c6c14c4"
+      url "https://github.com/Maymall/gigafile-rust-cli/releases/download/v0.10.0/rgfile-0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7407fb357f55d93d77ea37f182cb20b29cde2a4d19ab65a11df972bcde6a7c37"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Maymall/gigafile-rust-cli/releases/download/v0.9.3/rgfile-0.9.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "4ea65f68ff432b6afa6058dcc7856ad323d653336c6dafad002f56332866aefd"
+      url "https://github.com/Maymall/gigafile-rust-cli/releases/download/v0.10.0/rgfile-0.10.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "91364528e75cbec41ba903b340e114ec9ed9aa136d152af37671a5351b0434a2"
     end
   end
 
   def install
     bin.install "rgfile"
-    doc.install "README.md", "NOTICE.md"
+    doc.install "README.md"
   end
 
   test do
